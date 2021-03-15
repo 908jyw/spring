@@ -41,7 +41,7 @@ tmp/**/*
 .settings/
 .loadpath
 /src/main/resources/rebel.xml
-.metadata/**
+.metadata/*
 
 # External tool builders
 .externalToolBuilders/
