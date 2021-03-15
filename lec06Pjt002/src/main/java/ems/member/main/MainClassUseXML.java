@@ -39,6 +39,7 @@ public class MainClassUseXML {
 				"Law", "Statistics", "Computer", "Economics", "Public Administration"};
 
 //		StudentAssembler assembler = new StudentAssembler();
+		// classpath:applicationContext.xml 을 이용해서 스프링 컨테이너 생성 -> 객체가 생성이 되면서 의존 주입도 같이 됨 
 		GenericXmlApplicationContext ctx = 
 				new GenericXmlApplicationContext("classpath:applicationContext.xml");
 		

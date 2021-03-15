@@ -35,7 +35,8 @@ public class MainClass {
 		String[] sMajors = {"English Literature", "Korean Language and Literature", 
 				"French Language and Literature", "Philosophy", "History", 
 				"Law", "Statistics", "Computer", "Economics", "Public Administration"};
-
+		
+		// 일반적인 자바 객체 생성
 		StudentAssembler assembler = new StudentAssembler();
 		
 		
