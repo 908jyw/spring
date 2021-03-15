@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.brms.book.Book;
 import com.brms.book.dao.BookDao;
 
+// 인터페이스를 적용하여, 빈 객체 생성 및 소멸 시 메서드 구현 가능 
 public class BookRegisterService implements InitializingBean, DisposableBean {
 
 	@Autowired
