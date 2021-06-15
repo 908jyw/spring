@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ApplicationContextBasicFineTest {
@@ -20,7 +21,7 @@ public class ApplicationContextBasicFineTest {
     void fineBeanByName()
     {
         MemberService memberService = ac.getBean("memberService",MemberService.class);
-        Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
+        assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
 
     @Test
@@ -28,7 +29,7 @@ public class ApplicationContextBasicFineTest {
     void fineBeanByType()
     {
         MemberService memberService = ac.getBean(MemberService.class);
-        Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
+        assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
 
     @Test
@@ -36,7 +37,7 @@ public class ApplicationContextBasicFineTest {
     void fineBeanByName2()
     {
         MemberService memberService = ac.getBean("memberService",MemberServiceImpl.class);
-        Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
+        assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
 
     @Test

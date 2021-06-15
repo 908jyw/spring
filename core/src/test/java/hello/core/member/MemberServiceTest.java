@@ -9,6 +9,7 @@ public class MemberServiceTest {
 
     MemberService memberService;
 
+    // 테스트 실행 전에 무조건 실행하는 메서드
     @BeforeEach
     public void beforeEach(){
         AppConfig appConfig = new AppConfig();
